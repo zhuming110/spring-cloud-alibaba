@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: nacos-provider
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: 100.116.3.202:8848
+        file-extension: yaml
+        prefix: nacos-config
+        group: TEST_GROUP
+        namespace: 91cf6b98-e0f3-41ca-adb5-ba59393a8ef1
+      discovery:
+        server-addr: 100.116.3.202:8848
+        username: nacos
+        password: nacos
+        namespace: 91cf6b98-e0f3-41ca-adb5-ba59393a8ef1
+
+
+
